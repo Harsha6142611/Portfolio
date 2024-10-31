@@ -5,6 +5,9 @@ import ExperienceCard from './components/ExperienceCard';
 import TypewriterText from './components/TypewriterText';
 import MatrixBackground from './components/MatrixBackground';
 import CursorEffect from './components/CursorEffect';
+import Achievements from './components/Achievements';
+import Skills from './components/Skills';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -31,19 +34,19 @@ function App() {
               Specializing in smart contracts, DApps, and decentralized systems
             </p>
             <div className="flex gap-6">
-              <a href="https://github.com/harshapasupula" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200">
+              <a href="https://github.com/Harsha6142611/" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200" target='_blank'>
                 <Github className="w-5 h-5" />
                 <span className="text-sm">GitHub</span>
               </a>
-              <a href="https://linkedin.com/in/harshapasupula" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200">
+              <a href="https://www.linkedin.com/in/harsha-pasupula-b59a8b249/" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200" target='_blank'>
                 <Linkedin className="w-5 h-5" />
                 <span className="text-sm">LinkedIn</span>
               </a>
-              <a href="https://leetcode.com/harshapasupula" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200">
+              <a href="https://leetcode.com/u/Harsha614261/" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200">
                 <Code className="w-5 h-5" />
                 <span className="text-sm">LeetCode</span>
               </a>
-              <a href="mailto:harsha.pasupula@example.com" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200">
+              <a href="mailto:pasupulaharsha7006@gmail.com" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200">
                 <Mail className="w-5 h-5" />
                 <span className="text-sm">Email</span>
               </a>
@@ -51,8 +54,9 @@ function App() {
           </div>
         </header>
 
+        <AboutMe />
         {/* Experience Section */}
-        <section className="container mx-auto px-4 py-16">
+        <section className="container mx-auto px-4 py-5">
           <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
           <div className="max-w-4xl mx-auto">
             <ExperienceCard
@@ -60,9 +64,11 @@ function App() {
               company="DCODEBLOCKS"
               period="Jun 2024 - Present"
               description={[
-                "Developed and tested smart contracts using Solidity for various blockchain platforms",
-                "Deployed contracts on multiple testnets including Polygon, Optimism, and BSC",
-                "Worked on NFT minting and OpenSea integration"
+                "Core Blockchain Developer at DCODEBLOCK",
+                "Implemented and integrated multiple testnets, including Polygon, Ethereum, BNB, and Scroll etc..",
+                "Worked on NFT deployments across platforms",
+                "Integrated SDKs like Solana for enhanced blockchain functionality",
+                "Developed and integrated a Solidity compiler for streamlined smart contract development"
               ]}
               icon={<Blocks className="w-8 h-8 text-blue-400" />}
             />
@@ -77,22 +83,28 @@ function App() {
               title="Google Drive 3.0"
               description="Decentralized storage solution using IPFS with Pinata, featuring AES encryption and real-time tracking"
               tags={["IPFS", "Pinata", "AES", "React"]}
-              link="#"
+              link="https://googledrive3-0.netlify.app/"
+              githubLink="https://github.com/Harsha6142611/GoogleDrive3.0"
               icon={<Code2 className="w-6 h-6" />}
+              image="images/googledrive3.png"
             />
             <ProjectCard
               title="Voting DApp"
               description="Secure decentralized voting system with Metamask integration and smart contract implementation"
               tags={["Solidity", "JavaScript", "Node.js", "Web3"]}
-              link="#"
+              link="https://harshavoting.netlify.app/"
+              githubLink="https://github.com/Harsha6142611/VotingServer"
               icon={<Code2 className="w-6 h-6" />}
+              image="images/voting.png"
             />
             <ProjectCard
               title="Multiplayer Show Card Game"
               description="Real-time multiplayer card game with video conferencing and AI-powered bots"
               tags={["Node.js", "Socket.io", "React", "Jitsi"]}
-              link="#"
+              link="https://showgame1.netlify.app/"
+              githubLink="https://github.com/Harsha6142611/Show-Game"
               icon={<Code2 className="w-6 h-6" />}
+              image="images/showgame.png"
             />
           </div>
         </section>
@@ -103,7 +115,7 @@ function App() {
           <div className="max-w-4xl mx-auto bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm border border-gray-700/50">
             <div className="aspect-w-16 aspect-h-9 relative">
               <img
-                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                src="images/hackerHouseGoa.png"
                 alt="Hacker House Goa"
                 className="object-cover w-full h-[400px]"
               />
@@ -132,37 +144,9 @@ function App() {
 
         {/* Skills & Achievements */}
         <section className="container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Skills</h2>
-              <div className="space-y-4">
-                <div className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm border border-gray-700/50">
-                  <h3 className="font-semibold mb-2">Blockchain</h3>
-                  <p className="text-gray-300">Ethereum, Solidity, Ganache, Hardhat, Truffle</p>
-                </div>
-                <div className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm border border-gray-700/50">
-                  <h3 className="font-semibold mb-2">Languages</h3>
-                  <p className="text-gray-300">English, Hindi, Telugu</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Achievements</h2>
-              <div className="space-y-4">
-                <div className="bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm border border-gray-700/50">
-                  <Trophy className="w-8 h-8 text-yellow-400 mb-4" />
-                  <p className="text-gray-300">
-                    Published patent on "A Healthcare Data Management Optimization System Using Blockchain"
-                  </p>
-                </div>
-                <div className="bg-gray-800/50 p-6 rounded-lg backdrop-blur-sm border border-gray-700/50">
-                  <Trophy className="w-8 h-8 text-blue-400 mb-4" />
-                  <p className="text-gray-300">
-                    Participated in Hacker House Goa - Blockchain Innovation Hackathon
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto space-y-12">
+            <Skills />
+            <Achievements />
           </div>
         </section>
 
