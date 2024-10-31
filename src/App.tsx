@@ -30,8 +30,8 @@ function App() {
                 ]}
               />
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Specializing in smart contracts, DApps, and decentralized systems
+            <p className="text-s text-gray-300 mb-8">
+              Specializing in Blockchain, Smart Contracts, DApps, and Decentralized systems
             </p>
             <div className="flex gap-6">
               <a href="https://github.com/Harsha6142611/" className="hover:text-blue-400 transition-colors flex items-center gap-2 hover:scale-110 transform duration-200" target='_blank'>
