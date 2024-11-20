@@ -138,7 +138,7 @@ const projectsData: Record<string, ProjectDetails> = {
   ],
   technologies: [
     'Solidity',
-    'Polygon Network',
+    'Ethereum Network',
     'Web3.js',
     'React.js',
     'MetaMask',
