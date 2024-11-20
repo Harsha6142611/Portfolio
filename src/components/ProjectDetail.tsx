@@ -213,7 +213,6 @@ const projectsData: Record<string, ProjectDetails> = {
       'React.js',
       'Jitsi SDK',
       'JavaScript',
-      'HTML5',
       'WebRTC'
     ],
     tags: ['Socket.io', 'Real-time', 'Multiplayer', 'WebRTC', 'Game', 'Node.js'],
