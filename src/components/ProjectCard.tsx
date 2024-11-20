@@ -1,6 +1,8 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { Github } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -9,11 +11,21 @@ interface ProjectCardProps {
   githubLink?: string;
   icon: React.ReactNode;
   image?: string;
+  id: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, link, icon, githubLink, image }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags, link, icon, githubLink, image, id }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/project/${id}`);
+  };
+
   return (
-    <div className="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors relative">
+    <div 
+      className="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors relative cursor-pointer"
+      onClick={handleClick}
+    >
       
 <div className="overflow-visible rounded-t-lg mb-4 relative group">
   <img
