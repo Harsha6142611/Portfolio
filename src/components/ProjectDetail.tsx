@@ -152,6 +152,77 @@ const projectsData: Record<string, ProjectDetails> = {
   image: '/images/voting.png',
   features: []
 },
+  'show-game': {
+    title: 'SHOW GAME',
+    description: 'A real-time multiplayer card game featuring customizable themes, AI bots, and integrated video/audio chat',
+    longDescription: [
+      'An innovative online multiplayer card game that combines strategic gameplay with real-time social interaction.',
+      'Features customizable card themes, AI-powered bots, and seamless communication through integrated video/audio chat.',
+      'Built with Socket.io for real-time updates and Jitsi for video conferencing, creating an immersive gaming experience.'
+    ],
+    workflowSteps: [
+      {
+        title: 'Room Management',
+        details: [
+          'Create or join custom game rooms',
+          'Set player count (2-6 players)',
+          'Customize card themes (Marvel, Harry Potter, GTA, etc.)',
+          'Add AI-powered bots for incomplete rooms'
+        ]
+      },
+      {
+        title: 'Gameplay Mechanics',
+        details: [
+          'Turn-based card game with real-time updates',
+          'Strategic card drawing and discarding',
+          'Win condition: Collect four identical cards',
+          'Instant winner announcements and rematch options'
+        ]
+      },
+      {
+        title: 'Real-Time Communication',
+        details: [
+          'Integrated video/audio chat via Jitsi',
+          'Group text chat using Socket.io',
+          'Live game state updates',
+          'Seamless player interaction'
+        ]
+      },
+      {
+        title: 'AI Bot System',
+        details: [
+          'Probability-based decision making',
+          'Strategic gameplay algorithms',
+          'Automatic player replacement',
+          'Challenging computer opponents'
+        ]
+      }
+    ],
+    advantages: [
+      'Fully customizable card themes and gameplay',
+      'Real-time multiplayer interaction',
+      'Integrated video, audio, and text chat',
+      'Intelligent AI-powered bots',
+      'Cross-platform compatibility',
+      'Stunning neon-themed interface'
+    ],
+    technologies: [
+      'Socket.io',
+      'Node.js',
+      'Express',
+      'React.js',
+      'Jitsi SDK',
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'WebRTC'
+    ],
+    tags: ['Socket.io', 'Real-time', 'Multiplayer', 'WebRTC', 'Game', 'Node.js'],
+    link: 'https://show-game.netlify.app/',
+    githubLink: 'https://github.com/Harsha6142611/ShowGame',
+    image: '/images/showgame.png',
+    features: []
+  },
   // Add other projects here...
 };
 
