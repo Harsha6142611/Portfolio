@@ -82,6 +82,76 @@ const projectsData: Record<string, ProjectDetails> = {
     image: '/images/googledrive3.png',
     features: []
   },
+  'voting-dapp': {
+  title: 'Decentralized Voting DApp',
+  description: 'A blockchain-based voting platform ensuring security, transparency, and immutability in elections',
+  longDescription: [
+    'A revolutionary decentralized voting platform that addresses the challenges of traditional voting systems through blockchain technology.',
+    'Built to ensure trust and transparency in electoral processes while eliminating vulnerabilities like tampering, lack of transparency, and centralized control.',
+    'Leverages smart contracts on the Polygon network to provide a secure, transparent, and efficient voting system suitable for various real-world applications.'
+  ],
+  workflowSteps: [
+    {
+      title: 'Election Setup',
+      details: [
+        'Election Commission deploys smart contract on blockchain',
+        'Sets election duration and parameters',
+        'Registers eligible candidates and voters',
+        'Initializes secure voting environment'
+      ]
+    },
+    {
+      title: 'Voter Registration & Authentication',
+      details: [
+        'MetaMask wallet integration for secure authentication',
+        'Voter eligibility verification through smart contracts',
+        'One-wallet-one-vote enforcement',
+        'Immutable record of registered voters'
+      ]
+    },
+    {
+      title: 'Vote Casting Process',
+      details: [
+        'Secure vote submission through MetaMask',
+        'Real-time vote recording on blockchain',
+        'Encrypted vote storage for privacy',
+        'Prevention of double voting'
+      ]
+    },
+    {
+      title: 'Result Declaration',
+      details: [
+        'Automatic vote tallying through smart contracts',
+        'Real-time result updates',
+        'Transparent winner declaration',
+        'Immutable election results'
+      ]
+    }
+  ],
+  advantages: [
+    'Immutable and tamper-proof voting records',
+    'Complete transparency in the election process',
+    'Decentralized architecture eliminating single points of failure',
+    'Real-time vote tracking and result declaration',
+    'Cost-effective and environmentally friendly',
+    'Enhanced accessibility for remote voting'
+  ],
+  technologies: [
+    'Solidity',
+    'Polygon Network',
+    'Web3.js',
+    'React.js',
+    'MetaMask',
+    'Smart Contracts',
+    'Tailwind CSS',
+    'Hardhat'
+  ],
+  tags: ['Blockchain', 'Voting', 'DApp', 'Web3', 'Solidity', 'React'],
+  link: 'https://harshavoting.netlify.app/',
+  githubLink: 'https://github.com/Harsha6142611/VotingServer',
+  image: '/images/voting.png',
+  features: []
+},
   // Add other projects here...
 };
 
