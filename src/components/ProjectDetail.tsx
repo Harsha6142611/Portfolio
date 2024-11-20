@@ -213,7 +213,6 @@ const projectsData: Record<string, ProjectDetails> = {
       'React.js',
       'Jitsi SDK',
       'JavaScript',
-      'WebRTC'
     ],
     tags: ['Socket.io', 'Real-time', 'Multiplayer', 'WebRTC', 'Game', 'Node.js'],
     link: 'https://show-game.netlify.app/',
