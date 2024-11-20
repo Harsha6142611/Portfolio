@@ -67,7 +67,7 @@ const projectsData: Record<string, ProjectDetails> = {
       'Decentralized architecture for global availability'
     ],
     technologies: [
-      'AES Encryption',
+      'AES(Advanced Encryption Standard) Encryption',
       'IPFS',
       'Pinata SDK',
       'Solidity',
