@@ -68,7 +68,7 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: [
       'AES(Advanced Encryption Standard) Encryption',
-      'IPFS',
+      'IPFS (InterPlanetary File System)',
       'Pinata SDK',
       'Solidity',
       'Polygon Network',
