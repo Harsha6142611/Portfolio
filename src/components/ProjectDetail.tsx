@@ -86,7 +86,7 @@ const projectsData: Record<string, ProjectDetails> = {
   title: 'Decentralized Voting DApp',
   description: 'A blockchain-based voting platform ensuring security, transparency, and immutability in elections',
   longDescription: [
-    'A revolutionary decentralized voting platform that addresses the challenges of traditional voting systems through blockchain technology.',
+    'A revolutionary decentralized voting platform that addresses the challenges of traditional voting system through blockchain technology.',
     'Built to ensure trust and transparency in electoral processes while eliminating vulnerabilities like tampering, lack of transparency, and centralized control.',
     'Leverages smart contracts on the Polygon network to provide a secure, transparent, and efficient voting system suitable for various real-world applications.'
   ],
