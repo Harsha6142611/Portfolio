@@ -19,7 +19,7 @@ interface ProjectDetails {
 const projectsData: Record<string, ProjectDetails> = {
   'google-drive-3': {
     title: 'Google Drive 3.0',
-    description: 'Decentralized storage solution using IPFS with Pinata',
+    description: 'Decentralized storage solution using IPFS and AES Encryption',
     longDescription: [
       'A decentralized platform designed to store confidential files with unmatched security and privacy.',
       'Built with cutting-edge blockchain technology and IPFS (InterPlanetary File System), ensuring your data remains safe, tamper-proof, and completely under your control.',
