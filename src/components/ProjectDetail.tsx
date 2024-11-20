@@ -76,7 +76,7 @@ const projectsData: Record<string, ProjectDetails> = {
       'Web3.js',
       'Tailwind CSS'
     ],
-    tags: ['IPFS', 'Pinata', 'AES', 'React', 'Blockchain', 'Web3'],
+    tags: ['IPFS', 'Pinata', 'IPFS', 'AES', 'React', 'Blockchain', 'Web3'],
     link: 'https://googledrive3-0.netlify.app/',
     githubLink: 'https://github.com/Harsha6142611/GoogleDrive3.0',
     image: '/images/googledrive3.png',
