@@ -146,7 +146,7 @@ const projectsData: Record<string, ProjectDetails> = {
     'Tailwind CSS',
     'Hardhat'
   ],
-  tags: ['Blockchain', 'Voting', 'DApp', 'Web3', 'Solidity', 'React'],
+  tags: ['Blockchain', 'Voting', 'DApp', 'Web3', 'Solidity', 'React', 'Smart Contracts'],
   link: 'https://harshavoting.netlify.app/',
   githubLink: 'https://github.com/Harsha6142611/VotingServer',
   image: '/images/voting.png',
