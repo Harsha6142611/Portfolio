@@ -214,7 +214,6 @@ const projectsData: Record<string, ProjectDetails> = {
       'Jitsi SDK',
       'JavaScript',
       'HTML5',
-      'CSS3',
       'WebRTC'
     ],
     tags: ['Socket.io', 'Real-time', 'Multiplayer', 'WebRTC', 'Game', 'Node.js'],
