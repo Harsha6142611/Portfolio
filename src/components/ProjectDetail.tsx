@@ -212,7 +212,7 @@ const projectsData: Record<string, ProjectDetails> = {
       'Express',
       'React.js',
       'Jitsi SDK',
-      'JavaScript',
+      'JavaScript'
     ],
     tags: ['Socket.io', 'Real-time', 'Multiplayer', 'WebRTC', 'Game', 'Node.js'],
     link: 'https://show-game.netlify.app/',
