@@ -272,8 +272,6 @@ const projectsData: Record<string, ProjectDetails> = {
       'Zero-Knowledge Proofs',
       'Secure Vaults',
       'Node.js',
-      'React.js',
-      'Web3.js',
       'Cryptographic Libraries',
       'Secure Storage Solutions'
     ],
