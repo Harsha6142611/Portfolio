@@ -224,71 +224,71 @@ const projectsData: Record<string, ProjectDetails> = {
     title: 'ZKAuth',
     description: 'Zero-Knowledge Proof Authentication System for Privacy-Preserving Identity Verification',
     longDescription: [
-      'A cutting-edge authentication system that leverages zero-knowledge proofs to verify user identity without revealing sensitive information.',
-      'Built using zk-SNARKs technology to enable secure and private authentication while maintaining complete user anonymity.',
-      'Implements cryptographic protocols to prove identity attributes without exposing the actual data, perfect for applications requiring high privacy standards.'
+      'A secure authentication system leveraging zero-knowledge proofs for private and tamper-resistant user verification.',
+      'Features a robust registration process, secure login mechanism, and foolproof account recovery system.',
+      'Implements advanced cryptographic protocols to ensure user privacy while maintaining high security standards.'
     ],
     workflowSteps: [
       {
-        title: 'Identity Setup',
+        title: 'Registration Process',
         details: [
-          'User generates cryptographic credentials',
-          'Attributes are hashed and converted to zk-friendly format',
-          'Creation of verification key and proving key',
-          'Secure storage of identity parameters'
+          'User selects a secret key for account creation',
+          'Backend generates public-private key pair',
+          'Creation of secure user vault',
+          'Generation and issuance of recovery phrase',
+          'Secure storage of recovery information'
         ]
       },
       {
-        title: 'Proof Generation',
+        title: 'Login Process',
         details: [
-          'User initiates authentication request',
-          'zk-SNARK circuit processes identity attributes',
-          'Generation of zero-knowledge proof',
-          'Proof contains no sensitive information'
+          'User provides secret key for authentication',
+          'Backend generates authentication challenge',
+          'Private key used for challenge resolution',
+          'Proof verification without exposing secret key',
+          'Secure session establishment'
         ]
       },
       {
-        title: 'Verification Process',
+        title: 'Account Recovery',
         details: [
-          'Server receives and validates proof',
-          'Verification using public parameters',
-          'No actual credentials transmitted',
-          'Real-time proof verification'
-        ]
-      },
-      {
-        title: 'Access Management',
-        details: [
-          'Role-based access control integration',
-          'Temporary credential management',
-          'Revocation mechanisms',
-          'Audit logging with privacy preservation'
+          'Recovery initiated using secure recovery phrase',
+          'Verification of recovery phrase authenticity',
+          'Option to set new secret key',
+          'Secure vault access restoration'
         ]
       }
     ],
     advantages: [
-      'Complete privacy preservation during authentication',
-      'No storage of sensitive credentials on servers',
-      'Mathematically proven security guarantees',
-      'Scalable for enterprise applications',
-      'GDPR and privacy regulation compliant',
-      'Resistant to replay and impersonation attacks'
+      'Complete privacy preservation - no exposure of sensitive data',
+      'Robust tamper resistance through ZKP implementation',
+      'Decentralized data storage reducing attack vectors',
+      'Secure recovery mechanism for lost credentials',
+      'No central storage of sensitive information',
+      'Enhanced protection against common attack patterns'
     ],
     technologies: [
-      'Circom',
-      'SnarkJS',
-      'Solidity',
+      'Advanced Cryptography',
+      'Zero-Knowledge Proofs',
+      'Secure Vaults',
       'Node.js',
       'React.js',
       'Web3.js',
-      'zk-SNARKs',
-      'Ethereum'
+      'Cryptographic Libraries',
+      'Secure Storage Solutions'
     ],
-    tags: ['ZKP', 'Authentication', 'Privacy', 'Blockchain', 'Web3', 'Security'],
+    tags: ['ZKP', 'Authentication', 'Privacy', 'Cryptography', 'Security', 'Decentralized'],
     link: 'https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk',
     githubLink: 'https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk',
-    image: '/images/zkauth.png',
-    features: []
+    image: '/images/Zero-Knowledge-Proofs.jpg',
+    features: [
+      'Secure key pair generation',
+      'Challenge-based authentication',
+      'Recovery phrase system',
+      'Zero-knowledge proof verification',
+      'Secure vault management',
+      'Privacy-preserving authentication'
+    ]
   },
   // Add other projects here...
 };

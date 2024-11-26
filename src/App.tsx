@@ -87,7 +87,7 @@ function App() {
                 <ProjectCard
                     title="ZKP Authentication"
                     description="Zero-Knowledge Proof Authentication System for Privacy-Preserving Identity Verification"
-                    tags={["Zero knowledge Proof", "NPM SASS", "Authentication", "Cryptography"]}
+                    tags={["Zero knowledge Proof", "NPM JS", "Authentication", "Cryptography"]}
                     link="https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk"
                     githubLink="https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk"
                     icon={<Code2 className="w-6 h-6" />}
