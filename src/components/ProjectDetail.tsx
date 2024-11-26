@@ -220,6 +220,76 @@ const projectsData: Record<string, ProjectDetails> = {
     image: '/images/showgame.png',
     features: []
   },
+  'zkauth': {
+    title: 'ZKAuth',
+    description: 'Zero-Knowledge Proof Authentication System for Privacy-Preserving Identity Verification',
+    longDescription: [
+      'A cutting-edge authentication system that leverages zero-knowledge proofs to verify user identity without revealing sensitive information.',
+      'Built using zk-SNARKs technology to enable secure and private authentication while maintaining complete user anonymity.',
+      'Implements cryptographic protocols to prove identity attributes without exposing the actual data, perfect for applications requiring high privacy standards.'
+    ],
+    workflowSteps: [
+      {
+        title: 'Identity Setup',
+        details: [
+          'User generates cryptographic credentials',
+          'Attributes are hashed and converted to zk-friendly format',
+          'Creation of verification key and proving key',
+          'Secure storage of identity parameters'
+        ]
+      },
+      {
+        title: 'Proof Generation',
+        details: [
+          'User initiates authentication request',
+          'zk-SNARK circuit processes identity attributes',
+          'Generation of zero-knowledge proof',
+          'Proof contains no sensitive information'
+        ]
+      },
+      {
+        title: 'Verification Process',
+        details: [
+          'Server receives and validates proof',
+          'Verification using public parameters',
+          'No actual credentials transmitted',
+          'Real-time proof verification'
+        ]
+      },
+      {
+        title: 'Access Management',
+        details: [
+          'Role-based access control integration',
+          'Temporary credential management',
+          'Revocation mechanisms',
+          'Audit logging with privacy preservation'
+        ]
+      }
+    ],
+    advantages: [
+      'Complete privacy preservation during authentication',
+      'No storage of sensitive credentials on servers',
+      'Mathematically proven security guarantees',
+      'Scalable for enterprise applications',
+      'GDPR and privacy regulation compliant',
+      'Resistant to replay and impersonation attacks'
+    ],
+    technologies: [
+      'Circom',
+      'SnarkJS',
+      'Solidity',
+      'Node.js',
+      'React.js',
+      'Web3.js',
+      'zk-SNARKs',
+      'Ethereum'
+    ],
+    tags: ['ZKP', 'Authentication', 'Privacy', 'Blockchain', 'Web3', 'Security'],
+    link: 'https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk',
+    githubLink: 'https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk',
+    image: '/images/zkauth.png',
+    features: []
+  },
   // Add other projects here...
 };
 
