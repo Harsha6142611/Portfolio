@@ -84,6 +84,16 @@ function App() {
               <section className="container mx-auto px-4 py-16">
                 <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <ProjectCard
+                    title="ZKP Authentication"
+                    description="Zero-Knowledge Proof Authentication System for Privacy-Preserving Identity Verification"
+                    tags={["Zero knowledge Proof", "NPM SASS", "Authentication", "Cryptography"]}
+                    link="https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk"
+                    githubLink="https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk"
+                    icon={<Code2 className="w-6 h-6" />}
+                    image="images/Zero-Knowledge-Proofs.jpg"
+                    id="zkauth"
+                  />
                   <ProjectCard
                     id="google-drive-3"
                     title="Google Drive 3.0"
@@ -114,6 +124,7 @@ function App() {
                     image="images/showgame.png"
                     id="multiplayer-show-card-game"
                   />
+                  
                 </div>
               </section>
 
