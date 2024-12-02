@@ -275,7 +275,7 @@ const projectsData: Record<string, ProjectDetails> = {
       'Cryptographic Libraries',
       'Secure Storage Solutions'
     ],
-    tags: ['ZKP', 'Authentication', 'Privacy', 'Cryptography', 'Security', 'Decentralized'],
+    tags: ['ZKP', 'Authentication', 'Privacy','NPM Sass', 'Cryptography', 'Security', 'Decentralized'],
     link: 'https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk',
     githubLink: 'https://github.com/Harsha6142611/zkAuth-SDK/tree/main/zkauth-sdk',
     image: '/images/Zero-Knowledge-Proofs.jpg',
