@@ -122,7 +122,7 @@ function App() {
                     githubLink="https://github.com/Harsha6142611/Show-Game"
                     icon={<Code2 className="w-6 h-6" />}
                     image="images/showgame.png"
-                    id="multiplayer-show-card-game"
+                    id="show-game"
                   />
                   
                 </div>
