@@ -214,7 +214,7 @@ const projectsData: Record<string, ProjectDetails> = {
       'Jitsi SDK',
       'JavaScript'
     ],
-    tags: ['Socket.io', 'Real-time', 'Multiplayer', "Video Audio chat", "Group text chat",'Game', 'Node.js'],
+    tags: ['Socket.io', 'Real-time', 'Multiplayer', 'Video Audio chat', 'Group text chat', 'Game', 'Node.js'],
     link: 'https://show-game.netlify.app/',
     githubLink: 'https://github.com/Harsha6142611/ShowGame',
     image: '/images/showgame.png',
