@@ -13,7 +13,7 @@ const MatrixBackground: React.FC = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>[]{}();:+-*/=';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>[]{}();:+-*/=?.';
     const fontSize = 14;
     const columns = canvas.width / fontSize;
     const drops: number[] = [];
