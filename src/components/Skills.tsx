@@ -32,7 +32,7 @@ const Skills: React.FC = () => (
           <h3 className="font-semibold text-xl text-gray-100">Blockchain</h3>
         </div>
         <div className="flex flex-wrap gap-2">
-          {['Ethereum', 'Solidity', 'Ganache', 'Hardhat', 'Truffle'].map(skill => (
+          {['Ethereum', 'Solidity', 'Ganache', 'Hardhat'].map(skill => (
             <span
               key={skill}
               className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm font-medium transition-transform transform hover:-translate-y-1 hover:shadow-lg"
