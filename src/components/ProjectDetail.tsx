@@ -300,115 +300,121 @@ const ProjectDetail: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <Link to="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8">
-          <ArrowLeft className="w-5 h-5 mr-2" />
-          Back to Portfolio
-        </Link>
+    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white">
+  <div className="container mx-auto px-4 py-12 max-w-6xl">
+    <Link to="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-10 transition">
+      <ArrowLeft className="w-5 h-5 mr-2" />
+      Back to Portfolio
+    </Link>
 
-        <div className="bg-gray-800/50 rounded-lg p-8 space-y-12">
-          {/* Header Section */}
-          <div className="space-y-6">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-80 object-cover rounded-lg"
-            />
+    <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 space-y-16 border border-white/10 shadow-xl hover:shadow-2xl transition-shadow duration-300">
 
-            <div className="flex justify-between items-center">
-              <h1 className="text-4xl font-bold">{project.title}</h1>
-              <div className="flex gap-4">
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors"
-                >
-                  <Github className="w-5 h-5" />
-                  <span>GitHub</span>
-                </a>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  <span>Live Demo</span>
-                </a>
-              </div>
-            </div>
+      {/* Header Section */}
+      <div className="space-y-6">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-80 object-cover rounded-xl shadow-md transition-transform duration-500 hover:scale-[1.01]"
+        />
 
-            <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Overview Section */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Overview</h2>
-            <div className="space-y-4">
-              {project.longDescription.map((desc, index) => (
-                <p key={index} className="text-gray-300 leading-relaxed">{desc}</p>
-              ))}
-            </div>
-          </div>
-
-          {/* Workflow Section */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold">How It Works</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {project.workflowSteps.map((step, index) => (
-                <div key={index} className="bg-gray-700/30 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">{`${index + 1}. ${step.title}`}</h3>
-                  <ul className="list-disc list-inside space-y-2">
-                    {step.details.map((detail, idx) => (
-                      <li key={idx} className="text-gray-300">{detail}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Advantages Section */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Key Advantages</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              {project.advantages.map((advantage, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="text-blue-400">•</div>
-                  <p className="text-gray-300">{advantage}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Technologies Section */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Technologies Used</h2>
-            <div className="flex flex-wrap gap-3">
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-gray-700/50 rounded-lg text-gray-300"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <h1 className="text-4xl font-extrabold tracking-tight">{project.title}</h1>
+          <div className="flex flex-wrap gap-4">
+            {project.githubLink && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors"
+              >
+                <Github className="w-5 h-5" />
+                <span className="text-sm">GitHub</span>
+              </a>
+            )}
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="w-5 h-5" />
+                <span className="text-sm">Live Demo</span>
+              </a>
+            )}
           </div>
         </div>
+
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-xs font-medium tracking-wide hover:bg-blue-500/30 transition"
+            >
+              #{tag}
+            </span>
+          ))}
+        </div>
       </div>
+
+      {/* Overview Section */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-semibold">Overview</h2>
+        <div className="space-y-4 text-gray-300 text-base leading-relaxed">
+          {project.longDescription.map((desc, index) => (
+            <p key={index}>{desc}</p>
+          ))}
+        </div>
+      </section>
+
+      {/* Workflow Section */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-semibold">How It Works</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {project.workflowSteps.map((step, index) => (
+            <div key={index} className="bg-white/5 border border-white/10 p-6 rounded-xl transition hover:shadow-lg">
+              <h3 className="text-xl font-semibold mb-3">{`${index + 1}. ${step.title}`}</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 text-sm">
+                {step.details.map((detail, idx) => (
+                  <li key={idx}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Advantages Section */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-semibold">Key Advantages</h2>
+        <div className="grid md:grid-cols-2 gap-5 text-gray-300 text-sm">
+          {project.advantages.map((advantage, index) => (
+            <div key={index} className="flex items-start gap-3">
+              <div className="text-blue-400 text-lg">•</div>
+              <p>{advantage}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-semibold">Technologies Used</h2>
+        <div className="flex flex-wrap gap-3">
+          {project.technologies.map((tech, index) => (
+            <span
+              key={index}
+              className="px-4 py-2 bg-gray-700/40 rounded-full text-sm text-gray-200 tracking-wide hover:bg-gray-600/60 transition"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </section>
     </div>
+  </div>
+</div>
+
   );
 };
 

@@ -30,8 +30,8 @@ function App() {
                   <h2 className="text-3xl font-bold mb-6 text-gray-300 flex items-center gap-2">
                     <TypewriterText 
                       texts={[
-                        "Blockchain Developer",
-                        "MERN Developer"
+                        "Software Devloper",
+                        "Java Developer",
                       ]}
                     />
                   </h2>
@@ -62,8 +62,26 @@ function App() {
               <AboutMe />
               {/* Experience Section */}
               <section className="container mx-auto px-4 py-5">
-                <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
-                <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-bold mb-12 text-center">
+                  <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                    Experience
+                  </span>
+                </h2>
+                <div className="max-w-4xl mx-auto space-y-6">
+                  <ExperienceCard
+                    title="Full Stack Developer"
+                    company="NYALAZONE"
+                    period="2024 - Present"
+                    description={[
+                      "Architected and developed a scalable chat application handling 1M+ concurrent users with private and group messaging functionality",
+                      "Optimized real-time communication through socket event handling, reducing message delivery latency and enhancing user experience",
+                      "Integrated Redis for high-performance data operations, significantly improving application read/write speeds",
+                      "Implemented comprehensive features including online status indicators, typing notifications, and message management",
+                      "Designed and deployed production-ready architecture meeting enterprise-level performance and reliability requirements"
+                    ]}
+                    // icon={<MessageSquare className="w-8 h-8 text-blue-400" />}
+                  />
+
                   <ExperienceCard
                     title="Blockchain Developer"
                     company="DCODEBLOCKS"
@@ -75,7 +93,7 @@ function App() {
                       "Integrated SDKs like Solana for enhanced blockchain functionality",
                       "Developed and integrated a Solidity compiler for streamlined smart contract development"
                     ]}
-                    icon={<Blocks className="w-8 h-8 text-blue-400" />}
+                    // icon={<Blocks className="w-8 h-8 text-blue-400" />}
                   />
                 </div>
               </section>

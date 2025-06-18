@@ -1,53 +1,45 @@
-// import React from 'react';
-
-// const AboutMe: React.FC = () => {
-//   return (
-//     <section className="container mx-auto px-4 py-16">
-//       <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
-//       <p className="text-gray-300 text-center max-w-2xl mx-auto">
-//       I'm a BTech Computer Science student at <strong>SRM AP University</strong> with strong skills in web and blockchain development. As a core blockchain developer at <strong>DCODEBLOCK</strong>, I built <strong>NFTs, Testnets, SDKs, and a Solidity Compiler</strong>. I also co-authored a patent titled <strong>"A Healthcare Data Management Optimization System Using Blockchain and a Method Thereof."</strong> Active in hackathons, like <strong>Hacker House Goa</strong>, I enjoy applying my knowledge to solve real-world challenges.
-//       </p>
-//     </section>
-//   );
-// };
-
-// export default AboutMe;
-
-
 import React from 'react';
-import { FaGraduationCap, FaBriefcase, FaCertificate, FaLaptopCode } from 'react-icons/fa';
+import {
+  FaGraduationCap,
+  FaBriefcase,
+  FaCertificate,
+  FaLaptopCode,
+} from 'react-icons/fa';
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="container mx-auto px-6 py-20 rounded-lg  overflow-hidden relative">
-      <div className="relative text-center max-w-3xl mx-auto p-10">
+    <section className="bg-gradient-to- via-gray-800 to-gray-900 py-24 px-6">
+      <div className="max-w-4xl mx-auto text-center">
         {/* Title */}
-        <h2 className="text-3xl font-extrabold text-white mb-8 animate-fadeIn">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">
           About Me
         </h2>
 
         {/* Description */}
-        <p className="text-white text-lg leading-relaxed mb-10 animate-fadeIn text-opacity-90">
-          I'm a BTech Computer Science student at <strong>SRM AP University</strong> with strong skills in web and blockchain development. As a core blockchain developer at <strong>DCODEBLOCK</strong>, I built <strong>NFTs, Testnets, SDKs, and a Solidity Compiler</strong>. I also co-authored a patent titled <strong>"A Healthcare Data Management Optimization System Using Blockchain and a Method Thereof."</strong> Active in hackathons, like <strong>Hacker House Goa</strong>, I enjoy applying my knowledge to solve real-world challenges.
+        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-12">
+          I’m a BTech Computer Science student at <strong className="text-blue-400">SRM AP University</strong> with strong skills in web and blockchain development. As a core blockchain developer at <strong className="text-green-400">DCODEBLOCK</strong>, I built <strong className="text-purple-400">NFTs, Testnets, SDKs, and a Solidity Compiler</strong>. I also co-authored a patent titled <em className="text-yellow-400">"A Healthcare Data Management Optimization System Using Blockchain and a Method Thereof."</em> Active in hackathons like <strong className="text-pink-400">Hacker House Goa</strong>, I enjoy solving real-world problems through code.
         </p>
-        
-        {/* Icons Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 animate-fadeIn">
-          <div className="flex flex-col items-center">
-            <FaGraduationCap className="text-blue-500 text-4xl mb-2 shadow-lg" />
-            <span className="text-white text-opacity-90">Education</span>
+
+        {/* Icon Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-10">
+          <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
+            <FaGraduationCap className="text-blue-400 text-5xl mb-3 drop-shadow-xl" />
+            <span className="text-white text-sm tracking-wide uppercase">Education</span>
           </div>
-          <div className="flex flex-col items-center">
-            <FaBriefcase className="text-green-500 text-4xl mb-2 shadow-lg" />
-            <span className="text-white text-opacity-90">Experience</span>
+
+          <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
+            <FaBriefcase className="text-green-400 text-5xl mb-3 drop-shadow-xl" />
+            <span className="text-white text-sm tracking-wide uppercase">Experience</span>
           </div>
-          <div className="flex flex-col items-center">
-            <FaCertificate className="text-purple-500 text-4xl mb-2 shadow-lg" />
-            <span className="text-white text-opacity-90">Patent</span>
+
+          <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
+            <FaCertificate className="text-purple-400 text-5xl mb-3 drop-shadow-xl" />
+            <span className="text-white text-sm tracking-wide uppercase">Patent</span>
           </div>
-          <div className="flex flex-col items-center">
-            <FaLaptopCode className="text-yellow-500 text-4xl mb-2 shadow-lg" />
-            <span className="text-white text-opacity-90">Hackathons</span>
+
+          <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
+            <FaLaptopCode className="text-yellow-400 text-5xl mb-3 drop-shadow-xl" />
+            <span className="text-white text-sm tracking-wide uppercase">Hackathons</span>
           </div>
         </div>
       </div>
