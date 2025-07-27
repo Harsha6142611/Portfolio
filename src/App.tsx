@@ -10,7 +10,10 @@ import Achievements from './components/Achievements';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
 import ProjectDetail from './components/ProjectDetail';
-
+import GitHubPage from './components/GitHubPage';
+import GitHubSummary from './components/GitHubSummary';
+import LeetCodeSummary from "./components/LeetCodeSummary";
+import LeetCodePage from "./components/LeetCodePage";
 function App() {
   return (
     <Router>
@@ -60,6 +63,12 @@ function App() {
               </header>
 
               <AboutMe />
+              <div className="w-[70%] mx-auto my-12">
+                 <GitHubSummary />
+              </div>
+
+              <LeetCodeSummary />
+
               {/* Experience Section */}
               <section className="container mx-auto px-4 py-5">
                 <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
@@ -177,6 +186,9 @@ function App() {
           </div>
         } />
         <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="/github" element={<GitHubPage />} />
+        <Route path="/leetcode" element={<LeetCodePage />} />
+
       </Routes>
     </Router>
   );
