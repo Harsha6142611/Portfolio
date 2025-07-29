@@ -288,6 +288,84 @@ const projectsData: Record<string, ProjectDetails> = {
       'Privacy-preserving authentication'
     ]
   },
+  'chat-app': {
+  title: 'Enterprise Chat Application',
+  description: 'Production-grade chat system with real-time messaging, media sharing, and workspace collaboration',
+  longDescription: [
+    'A robust and feature-rich chat application built for enterprise use cases during my first company experience.',
+    'Designed with scalability, performance, and real-world usability in mind—supporting 1-on-1 and group chats, document exchange, participant management, and more.',
+    'Focused on modular architecture and production-readiness using WebSockets, Redis, Elasticsearch, and S3-compatible MinIO storage.'
+  ],
+  workflowSteps: [
+    {
+      title: 'Real-Time Messaging',
+      details: [
+        'Supports 1-on-1 and group messaging',
+        'Edit, reply, delete, and recall messages',
+        'Typing indicators and online/offline status updates'
+      ]
+    },
+    {
+      title: 'Chat and Workspace Features',
+      details: [
+        'Workspaces to organize group and team chats',
+        'Frequent contacts and user status tracking',
+        'Pagination for chat history and infinite scroll'
+      ]
+    },
+    {
+      title: 'Media and File Management',
+      details: [
+        'Document and image sharing',
+        'Image preview component with modal viewer',
+        'MinIO S3 object storage for files and media'
+      ]
+    },
+    {
+      title: 'Group Management and Search',
+      details: [
+        'Manage group participants (add/remove/view)',
+        'Elasticsearch integration for lightning-fast chat search',
+        'Clear chat and delete chat functionality'
+      ]
+    }
+  ],
+  advantages: [
+    'Production-ready architecture and codebase',
+    'Highly scalable and modular backend',
+    'Rich feature set for modern messaging experiences',
+    'Secure file handling using object storage',
+    'Fast and efficient search using Elasticsearch'
+  ],
+  technologies: [
+    'Angular',
+    'Node.js',
+    'Express',
+    'Socket.io',
+    'Redis',
+    'Elasticsearch',
+    'MinIO (S3)',
+    'PostgreSQL',
+    'Tailwind CSS'
+  ],
+  tags: ['Chat App', 'Sockets', 'Elasticsearch', 'Angular', 'Redis', 'MinIO', '1v1', 'Group Chat', 'Typing', 'Online Status'],
+  link: '', // Add Netlify or deployment link if available
+  githubLink: '', // Add GitHub repo link if public
+  image: '/images/chat-app.jpeg', // Add actual image to your /images folder
+  features: [
+    '1v1 and Group Chat',
+    'Send, Edit, Reply, Delete, Recall Messages',
+    'Typing Indicators and Online Status',
+    'Document and Image Sharing',
+    'Clear/Delete Chat',
+    'Manage Group Participants',
+    'Workspaces and Frequent Contacts',
+    'Chat Pagination',
+    'Image Preview Modal',
+    'Elasticsearch Chat Search'
+  ]
+}
+
   // Add other projects here...
 };
 

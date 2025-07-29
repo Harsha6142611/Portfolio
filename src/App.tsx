@@ -111,6 +111,19 @@ function App() {
               <section className="container mx-auto px-4 py-16">
                 <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                  <div className="relative rounded-xl border-2 border-yellow-400 shadow-yellow-500/30 shadow-lg hover:shadow-yellow-400/50 transition">
+                    <ProjectCard
+                      title="Enterprise Chat Application"
+                      description="🔥 Production-grade chat with real-time messaging, media sharing, online presence & Elasticsearch search"
+                      tags={["Angular", "Socket.io", "Redis", "Elasticsearch", "MinIO", "Chat"]}
+                      link=""
+                      githubLink=""
+                      icon={<Code2 className="w-6 h-6 text-yellow-400" />}
+                      image="/images/chat-app.jpeg"
+                      id="chat-app"
+                    />
+                  </div>
+
                 <ProjectCard
                     title="ZKP Authentication"
                     description="Zero-Knowledge Proof Authentication System for Privacy-Preserving Identity Verification"

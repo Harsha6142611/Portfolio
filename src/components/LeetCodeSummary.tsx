@@ -34,7 +34,7 @@ const LeetCodeSummary = () => {
     fetchLeetCodeStats();
   }, []);
 
-  if (error) return <div className="text-red-600">⚠️ {error}</div>;
+  // if (error) return <div className="text-red-600">⚠️ {error}</div>;
   if (!stats) return <div className="text-gray-500">Loading LeetCode stats...</div>;
 
   return (
