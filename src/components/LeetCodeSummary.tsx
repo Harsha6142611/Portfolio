@@ -22,7 +22,7 @@ const LeetCodeSummary = () => {
   useEffect(() => {
     const fetchLeetCodeStats = async () => {
       try {
-        const res = await fetch("https://leetcode-stats-api.herokuapp.com/Harsha614261");
+        const res = await fetch("https://leetcode-stats-api.herokuapp.com/{import.meta.env.VITE_LEETCODE_USERNAME}");
         if (!res.ok) throw new Error("Failed to fetch LeetCode data");
         const data = await res.json();
         setStats(data);

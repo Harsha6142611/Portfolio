@@ -17,7 +17,7 @@ const LeetCodePage = () => {
 
   useEffect(() => {
     const fetchStats = async () => {
-      const res = await fetch("https://leetcode-stats-api.herokuapp.com/Harsha614261");
+      const res = await fetch("https://leetcode-stats-api.herokuapp.com/{import.meta.env.VITE_LEETCODE_USERNAME}");
       const data = await res.json();
       setStats(data);
     };
