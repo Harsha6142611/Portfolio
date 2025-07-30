@@ -10,13 +10,13 @@ const AboutMe: React.FC = () => {
   return (
     <section className="from-gray-900 via-gray-800 to-gray-900 py-5 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-10 tracking-tight">
-          About Me
-        </h2>
 
         {/* Description */}
-        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-14 backdrop-blur-md px-4 py-6 rounded-lg bg-white/5 shadow-inner">
+        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-14 backdrop-blur-sm px-4 py-6 rounded-lg shadow-inner border border-white/20 hover:border-blue-400/30 hover:shadow-purple-500/30 transition-shadow duration-300 cursor-pointer">
+          {/* Title */}
+          <h2 className="text-3xl font-bold text-white mb-10 tracking-tight">
+            About Me
+          </h2>
           I'm <span className="text-blue-400 font-semibold">Harsha</span>, a passionate software developer with{" "}
           <span className="text-green-400 font-semibold">production-level experience</span> in building scalable,
           reliable, and optimized systems. I’ve designed and developed full-stack solutions that perform in real-world

@@ -42,11 +42,11 @@ const LeetCodeSummary = () => {
   return (
     <div className="flex justify-center items-start px-4 sm:px-0 mt-12 mb-12">
       <div
-        className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 cursor-pointer"
+        className="w-full md:w-[90%] lg:w-[80%] backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:border-blue-400/30 transition-all duration-300 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 cursor-pointer"
         onClick={() => navigate("/leetcode")}
       >
         <h2 className="text-3xl font-bold text-center mb-8 text-white">
-          🚀 My LeetCode Summary
+          My LeetCode Summary
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">

@@ -20,9 +20,9 @@ const GitHubSummary = () => {
       className="w-full px-4 py-10 flex justify-center items-center"
       onClick={() => navigate("/github")}
     >
-      <div className="w-full md:w-[90%] lg:w-[80%] bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-blue-400/30 transition-all duration-300 shadow-xl">
+      <div className="w-full md:w-[90%] lg:w-[80%] backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:border-blue-400/30 transition-all duration-300 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 cursor-pointer">
         <h2 className="text-3xl font-bold mb-8 text-center text-white tracking-wide">
-          🌟 My GitHub Summary
+          My GitHub Summary
         </h2>
 
         <div

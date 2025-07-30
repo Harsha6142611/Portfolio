@@ -68,64 +68,68 @@ function App() {
               <div className="w-[70%] mx-auto my-12">
                  <GitHubSummary />
               </div>
+              <div className="w-[70%] mx-auto my-12">
+                <LeetCodeSummary />
+              </div>
 
-              <LeetCodeSummary />
 
               {/* Experience Section */}
-              <section className="w-full flex justify-center px-4 py-10">
-                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300">
-                  <h2 className="text-3xl font-bold mb-12 text-center">
-                    <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
-                      Experience
-                    </span>
-                  </h2>
+              {/* <div className="w-[70%] mx-auto my-12"> */}
+                <section className="container mx-auto px-4 py-12">
+                  <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%]  backdrop-blur-sm rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 mx-auto">
+                    <h2 className="text-3xl font-bold mb-12 text-center">
+                      <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                        Experience
+                      </span>
+                    </h2>
 
-                  <div className="max-w-4xl mx-auto space-y-6">
-                    <ExperienceCard
-                      title="Full Stack Developer"
-                      company="NYALAZONE"
-                      period="2024 - Present"
-                      icon={<Server className="w-6 h-6 text-blue-400" />}
-                      description={[
-                        "Built a production-ready, scalable chat application with private and group messaging for 1M+ concurrent users.",
-                        "Gained hands-on experience with Angular, Python, Redis, sockets, and MinIO (S3-compatible object storage).",
-                        "Implemented real-time features like online presence, typing indicators, message edit/delete/recall, and dynamic member updates.",
-                        "Engineered socket-based real-time sync for message updates, group changes, and chatroom metadata.",
-                        "Optimized API calls and database queries, including partitioned DB schema design for high-performance message handling.",
-                        "Delivered responsive UI/UX with dynamic updates, file uploads, modals, and smooth image previews.",
-                        "Ensured robustness under load by addressing edge cases and resolving critical UI/UX bugs for production stability.",
-                      ]}
-                    />
+                    <div className="max-w-4xl mx-auto space-y-6">
+                      <ExperienceCard
+                        title="Full Stack Developer"
+                        company="NYALAZONE"
+                        period="2024 - Present"
+                        icon={<Server className="w-6 h-6 text-blue-400" />}
+                        description={[
+                          "Built a production-ready, scalable chat application with private and group messaging for 1M+ concurrent users.",
+                          "Gained hands-on experience with Angular, Python, Redis, sockets, and MinIO (S3-compatible object storage).",
+                          "Implemented real-time features like online presence, typing indicators, message edit/delete/recall, and dynamic member updates.",
+                          "Engineered socket-based real-time sync for message updates, group changes, and chatroom metadata.",
+                          "Optimized API calls and database queries, including partitioned DB schema design for high-performance message handling.",
+                          "Delivered responsive UI/UX with dynamic updates, file uploads, modals, and smooth image previews.",
+                          "Ensured robustness under load by addressing edge cases and resolving critical UI/UX bugs for production stability.",
+                        ]}
+                      />
 
 
-                    <ExperienceCard
-                      title="Blockchain Developer"
-                      company="DCODEBLOCKS"
-                      period="Jun 2024 - Present"
-                      icon={<Server className="w-6 h-6 text-blue-400" />}
-                      description={[
-                        "Core Blockchain Developer at DCODEBLOCK",
-                        "Implemented and integrated multiple testnets, including Polygon, Ethereum, BNB, and Scroll etc..",
-                        "Worked on NFT deployments across platforms",
-                        "Integrated SDKs like Solana for enhanced blockchain functionality",
-                        "Developed and integrated a Solidity compiler for streamlined smart contract development",
-                      ]}
-                    />
+                      <ExperienceCard
+                        title="Blockchain Developer"
+                        company="DCODEBLOCKS"
+                        period="Jun 2024 - Present"
+                        icon={<Server className="w-6 h-6 text-blue-400" />}
+                        description={[
+                          "Core Blockchain Developer at DCODEBLOCK",
+                          "Implemented and integrated multiple testnets, including Polygon, Ethereum, BNB, and Scroll etc..",
+                          "Worked on NFT deployments across platforms",
+                          "Integrated SDKs like Solana for enhanced blockchain functionality",
+                          "Developed and integrated a Solidity compiler for streamlined smart contract development",
+                        ]}
+                      />
+                    </div>
                   </div>
-                </div>
-              </section>
+                </section>
+              {/* </div> */}
 
               {/* Projects Section */}
               <section className="container mx-auto px-4 py-12">
-                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 mx-auto">
+                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%]  backdrop-blur-sm rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 mx-auto">
                   <h2 className="text-3xl font-bold mb-12 text-center text-white">
-                    🚀 Projects
+                    Projects
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="relative rounded-xl border-2 border-yellow-400 shadow-yellow-500/30 shadow-lg hover:shadow-yellow-400/50 transition">
                       <ProjectCard
                         title="Enterprise Chat Application"
-                        description="🔥 Production-grade chat with real-time messaging, media sharing, online presence & Elasticsearch search"
+                        description="Production-grade chat with real-time messaging, media sharing, online presence & Elasticsearch search"
                         tags={["Angular", "Socket.io", "Redis", "Elasticsearch", "MinIO", "Chat"]}
                         link=""
                         githubLink=""
@@ -182,9 +186,9 @@ function App() {
 
               {/* Hackathon Section */}
               <section className="container mx-auto px-4 py-12">
-                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-cyan-500/30 transition-shadow duration-300 mx-auto">
+                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%]  backdrop-blur-sm rounded-2xl border border-white/20 p-8 shadow-xl hover:shadow-purple-500/30 transition-shadow duration-300 mx-auto">
                   <h2 className="text-3xl font-bold mb-12 text-center text-white">
-                    🧠 Hackathon Experience
+                    Hackathon Experience
                   </h2>
                   <div className="bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm border border-gray-700/50">
                     <div className="aspect-w-16 aspect-h-9 relative">
@@ -220,14 +224,14 @@ function App() {
 
               {/* Skills & Achievements */}
               <section className="container mx-auto px-4 py-12">
-                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl hover:shadow-purple-400/30 transition-shadow duration-300 mx-auto">
+                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%]  backdrop-blur-sm rounded-2xl border border-white/20 shadow-xl hover:shadow-purple-400/30 transition-shadow duration-300 mx-auto">
                   <div className="space-y-12">
                     <Skills />
                   </div>
                 </div>
               </section>
               <section className="container mx-auto px-4 py-12">
-                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl hover:shadow-purple-400/30 transition-shadow duration-300 mx-auto">
+                <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%]  backdrop-blur-sm rounded-2xl border border-white/20 shadow-xl hover:shadow-purple-400/30 transition-shadow duration-300 mx-auto">
                   <div className="space-y-12">
                     <Achievements />
                   </div>
