@@ -10,6 +10,7 @@ import {
 import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 import { addDays, subDays } from "date-fns";
+import { FiArrowLeft } from "react-icons/fi"; // Icon
 
 const LeetCodePage = () => {
   const [stats, setStats] = useState<any>(null);
@@ -17,7 +18,7 @@ const LeetCodePage = () => {
 
   useEffect(() => {
     const fetchStats = async () => {
-      const res = await fetch("https://leetcode-stats-api.herokuapp.com/{import.meta.env.VITE_LEETCODE_USERNAME}");
+      const res = await fetch(`https://leetcode-stats-api.herokuapp.com/${import.meta.env.VITE_LEETCODE_USERNAME}`);
       const data = await res.json();
       setStats(data);
     };
@@ -27,21 +28,9 @@ const LeetCodePage = () => {
   if (!stats) return <div className="text-gray-400">Loading...</div>;
 
   const pieData = [
-    {
-      name: "Easy",
-      value: stats.easySolved,
-      color: "#22c55e",
-    },
-    {
-      name: "Medium",
-      value: stats.mediumSolved,
-      color: "#eab308",
-    },
-    {
-      name: "Hard",
-      value: stats.hardSolved,
-      color: "#ef4444",
-    },
+    { name: "Easy", value: stats.easySolved, color: "#22c55e" },
+    { name: "Medium", value: stats.mediumSolved, color: "#eab308" },
+    { name: "Hard", value: stats.hardSolved, color: "#ef4444" },
   ];
 
   const totalSolved = stats.totalSolved;
@@ -70,7 +59,17 @@ const LeetCodePage = () => {
   );
 
   return (
-    <div className="min-h-screen p-8 bg-[#111827] text-white">
+    <div className="min-h-screen p-8 bg-[#111827] text-white relative">
+      
+      {/* 🔙 Back Icon */}
+      <button
+        onClick={() => navigate(-1)}
+        className="absolute top-6 left-6 text-gray-300 hover:text-white flex items-center gap-1"
+      >
+        <FiArrowLeft className="text-xl" />
+        <span className="text-sm">Back</span>
+      </button>
+
       <h1 className="text-3xl font-bold mb-6 text-center">LeetCode Detailed Stats</h1>
 
       <div className="flex flex-col md:flex-row gap-10 justify-center items-center bg-[#1f2937] p-8 rounded-lg">
@@ -151,7 +150,6 @@ const LeetCodePage = () => {
             borderColor="border-red-500"
           />
         </div>
-        
       </div>
 
       {/* 📋 Stats Overview */}

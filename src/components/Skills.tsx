@@ -4,7 +4,7 @@ import { FaEthereum, FaLanguage, FaCode } from 'react-icons/fa';
 const Skills: React.FC = () => (
   <div className="p-8 max-w-4xl mx-auto">
     <h2 className="text-5xl font-bold text-center text-white mb-12 relative">
-      <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+      <span className="bg-gradient-to-r text-white text-3xl text-transparent bg-clip-text">
         Skills & Expertise
       </span>
     </h2>
